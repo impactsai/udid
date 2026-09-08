@@ -1,0 +1,29 @@
+{
+  "x402Version": 2,
+  "resource": {
+    "url": "https://api.example.test/v1/market-data",
+    "description": "Access to premium market data",
+    "mimeType": "application/json"
+  },
+  "accepts": [{
+    "scheme": "exact",
+    "network": "eip155:84532",
+    "amount": "100000",
+    "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "payTo": "0x209693Bc6afc0C5328bA36FaF03C514EF312287C",
+    "maxTimeoutSeconds": 60,
+    "extra": {"name": "USDC", "version": "2"}
+  }],
+  "extensions": {
+    "org.udid.decision@1": {
+      "version": "1",
+      "required": true,
+      "offerId": "urn:uuid:de3fd519-f0d2-4a6c-a3f3-2e80f8f84519",
+      "bindingDigest": "sha256:9216601448fcb879b1386d8348798385a7234981407c3860cdf5c32b28d2a6b7",
+      "credentialTypes": ["DecisionCredential", "DecisionToPayCredential"],
+      "presentationFormats": ["jwt_vp_json"],
+      "holderBinding": "did-authentication",
+      "authority": {"required": false}
+    }
+  }
+}

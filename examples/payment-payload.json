@@ -1,0 +1,29 @@
+{
+  "x402Version": 2,
+  "accepted": {
+    "scheme": "exact",
+    "network": "eip155:84532",
+    "amount": "100000",
+    "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "payTo": "0x209693Bc6afc0C5328bA36FaF03C514EF312287C",
+    "maxTimeoutSeconds": 60,
+    "extra": {"name": "USDC", "version": "2"}
+  },
+  "payload": {
+    "signature": "EXAMPLE ONLY — EIP-712 signature omitted",
+    "authorization": {
+      "from": "0x857b06519E91e3A54538791bDbb0E22373e36b66",
+      "to": "0x209693Bc6afc0C5328bA36FaF03C514EF312287C",
+      "value": "100000",
+      "validAfter": "1788856100",
+      "validBefore": "1788856160",
+      "nonce": "0x58b58ef4d3af2f2bbbeea0fc2ab3773025bfdca05056331a0ee9c5765948435d"
+    }
+  },
+  "extensions": {
+    "org.udid.decision@1": {
+      "presentation": "EXAMPLE ONLY — a valid JWT VP containing the decision credential",
+      "format": "jwt_vp_json"
+    }
+  }
+}
