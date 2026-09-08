@@ -1,6 +1,6 @@
-# Universal Decision Integrity Document (UDID)
+# Universal Decision and Impact Determination (UDID)
 
-UDID is a proposed, vendor-neutral profile for expressing a signed decision that a relying party can verify before it performs a consequential action, including an x402 payment flow.
+UDID is a proposed, vendor-neutral profile for expressing a signed decision and impact determination that a relying party can verify before it performs a consequential action, including an x402 payment flow.
 
 It is deliberately not a payment rail, wallet instruction, delegated-spend token, or settlement receipt. It supplies a missing evidence boundary:
 
