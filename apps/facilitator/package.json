@@ -17,7 +17,8 @@
     "check": "npm run typecheck && npm test && npm run build && npm run test:workers",
     "openapi": "node --import tsx scripts/openapi.ts",
     "demo:setup": "node --import tsx scripts/setup-demo.ts",
-    "demo": "node --import tsx scripts/demo.ts"
+    "demo": "node --import tsx scripts/demo.ts",
+    "smoke:deployed": "node --import tsx scripts/smoke-deployed.ts"
   },
   "dependencies": {
     "@ucans/core": "0.12.0",

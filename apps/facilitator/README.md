@@ -4,6 +4,8 @@ A TypeScript application that independent operators can deploy to their own Clou
 
 This application implements the [repository's draft UDID profile](../../SPECIFICATION.md). Operators choose their issuers, policy bytes, verification keys, payment limits and providers. No IXO service, shared signing key, hosted facilitator, or model is required.
 
+A [hosted Base Sepolia test instance](DEPLOYMENT.md) is available, with a repeatable smoke-test command and the prerequisites for a real testnet transfer.
+
 | Boundary | Implemented behavior |
 | --- | --- |
 | Payment protocol | x402 v2 `paymentRequirements`, `paymentPayload`, `isValid`, `success`, `transaction`, `/supported` |
