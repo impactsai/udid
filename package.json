@@ -4,6 +4,9 @@
   "private": true,
   "description": "Universal Decision and Impact Determination draft standard and conformance fixtures",
   "license": "MIT",
-  "scripts": {"test": "node --test tests/*.test.mjs"},
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:facilitator": "npm --prefix apps/facilitator run check"
+  },
   "engines": {"node": ">=20"}
 }

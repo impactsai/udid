@@ -21,6 +21,7 @@ The current proposal profiles a [W3C Verifiable Credential 2.0](https://www.w3.o
 - [schemas/x402-udid-extension.schema.json](schemas/x402-udid-extension.schema.json) — JSON Schema for the x402 extension value
 - [examples/](examples/) — an offer, a credential, and a submission envelope
 - [CONFORMANCE.md](CONFORMANCE.md) — implementation requirements and test matrix
+- [apps/facilitator/](apps/facilitator/) — deployable TypeScript / Cloudflare Workers reference facilitator with optional UCAN and UDID verification, EVM EIP-3009 and a custom Stripe capture adapter
 
 ## Quick validation
 
@@ -29,6 +30,8 @@ npm test
 ```
 
 The test suite validates the supplied examples and exercises critical rejection cases. It does not verify a real issuer DID, credential-status service, UCAN chain, EIP-712 signature, or facilitator; those integrations remain implementation responsibilities.
+
+The [reference application](apps/facilitator/README.md) has its own cryptographic, payment-adapter, and Cloudflare runtime tests. Its supported proof profiles and operator trust configuration are explicit; it is not a claim of universal proof-format support or production certification.
 
 ## Interoperability posture
 

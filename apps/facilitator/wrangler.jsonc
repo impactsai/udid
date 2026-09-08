@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "udid-x402-facilitator",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [{ "name": "COORDINATOR", "class_name": "FacilitatorCoordinator" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["FacilitatorCoordinator"] }],
+  "observability": { "enabled": true }
+}
